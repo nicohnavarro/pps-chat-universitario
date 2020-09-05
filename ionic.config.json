@@ -1,5 +1,8 @@
 {
   "name": "chatUniversitario",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }

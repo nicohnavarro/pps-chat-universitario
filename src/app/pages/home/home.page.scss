@@ -1,0 +1,56 @@
+ion-content {
+    // --background: #662e57;
+    --background: url(../../../assets/background.png) 0 0/100% 100% no-repeat;
+}
+
+ion-content.background {
+    --background: url(../../../assets/background.png) 0 0/100% 100% no-repeat;
+}
+
+ion-list.fondo {
+    background-color: transparent;
+}
+
+ion-list-header.cabecera {
+    border-radius: 20px;
+    background-color: #662e57;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1rem;
+}
+
+ion-item {
+    --border-radius: 24px;
+    margin-bottom: 1rem;
+}
+
+ion-button {
+    --background: transparent;
+}
+
+.boton {
+    height: 40%;
+    margin: 2rem;
+    border-radius: 25px;
+    border: 4px solid white;
+    font-size: large;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.avatar {
+    border: 1px solid white;
+    margin: 3px;
+}
+
+.boton :hover {
+    border: 2px solid black;
+}
+
+ion-button.lindo {
+    background: linear-gradient(#f12711, #f5af19);
+}
+
+.feo {
+    background: linear-gradient(#009FFF, #ec2F4B);
+}

@@ -1,0 +1,60 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home"></ion-back-button>
+        </ion-buttons>
+        <ion-title slot="start">
+            {{curso}}
+        </ion-title>
+        <ion-avatar slot="end" class="avatar">
+            <img src="../../assets/pruebaTP5.png">
+        </ion-avatar>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <div *ngIf="showSpinner">
+        <div id="custom-overlay">
+            <div class="flb">
+                <div class="Aligner-item Aligner-item--top"></div>
+                <img src="../../assets/pruebaTP5.png" alt="">
+                <div class="Aligner-item Aligner-item--bottom"></div>
+            </div>
+        </div>
+    </div>
+    <ion-list *ngIf="!showSpinner">
+        <ion-item *ngFor="let msg of mensajes" slot="start">
+            <ion-label *ngIf="!(msg.usuario == usuario.correo)" class="ellos">
+                <ion-badge color="primary" *ngIf="msg.usuario == 'admin@admin.com'">Administrador</ion-badge>
+                <ion-badge color="danger" *ngIf="msg.usuario == 'usuario@usuario.com'">Usuario</ion-badge>
+                <ion-badge color="dark" *ngIf="msg.usuario == 'invitado@invitado.com'">Invitado</ion-badge>
+                <ion-badge color="success" *ngIf="msg.usuario == 'tester@tester.com'">Tester</ion-badge>
+                <ion-badge color="warning" *ngIf="msg.usuario == 'anonimo@anonimo.com'">Anónimo</ion-badge>
+
+                <p>{{msg.mensaje}}</p>
+                <span>{{msg.fecha}}</span>
+            </ion-label>
+            <ion-label *ngIf="msg.usuario == usuario.correo" class="mio">
+                <p>{{msg.mensaje}}</p>
+                <span>{{msg.fecha}}</span>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+
+    <ion-footer *ngIf="!showSpinner">
+        <ion-toolbar color="secondary">
+            <ion-grid>
+                <ion-row class="enviar">
+                    <ion-col size="10">
+                        <ion-input class="entrada" minlength="2" (keydown.enter)="enviar()" maxlength="50" [(ngModel)]="mensaje" type="text" placeholder="Ingrese texto"></ion-input>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-button color="primary" (click)="enviar()">
+                            <ion-icon name="send"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+        </ion-toolbar>
+    </ion-footer>
+</ion-content>
