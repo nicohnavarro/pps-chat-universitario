@@ -1,7 +1,7 @@
 # Chat Universitario
 Ejercitacion de Ionic Angular PPS
 
-##Nicolás Navarro 🚀
+## Nicolás Navarro 🚀
 
 
 ### Inicio :clipboard:
