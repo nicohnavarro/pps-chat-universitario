@@ -1,20 +1,20 @@
-# PPS-IONIC-
-Ejercitacion de Ionic
+# Chat Universitario
+Ejercitacion de Ionic Angular PPS
 
 ##Nicolás Navarro 🚀
 
 
-### Inicio 🏥
+### Inicio :clipboard:
 
 ![principal](https://github.com/nicohnavarro/pps-chat-universitario/blob/master/src/assets/readme/inicio.PNG)
 
 
-### Login 🏥
+### Login :soon:
 
 ![principal](https://github.com/nicohnavarro/pps-chat-universitario/blob/master/src/assets/readme/login.PNG)
 
 
-### Chat 🏥
+### Chat :calling:
 
 ![principal](https://github.com/nicohnavarro/pps-chat-universitario/blob/master/src/assets/readme/chat.PNG)
 
