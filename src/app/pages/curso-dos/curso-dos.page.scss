@@ -9,6 +9,7 @@ ion-toolbar {
 
 ion-item {
     --background: transparent;
+    margin: 0;
 }
 
 ion-content {
@@ -25,8 +26,11 @@ ion-item {
     background-color: transparent;
     // background-color: #662e57;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0.5rem;
-    padding: 0.1rem;
+    margin: 0;
+    padding: 0;
+    p {
+        font-size: 1.2em;
+    }
 }
 
 div img {
